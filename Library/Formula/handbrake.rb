@@ -1,9 +1,10 @@
 require 'formula'
 
 class Handbrake < Formula
-  head 'https://github.com/HandBrake/HandBrake/tarball/master'
+  url 'http://downloads.sourceforge.net/project/handbrake/0.9.8/HandBrake-0.9.8.tar.bz2'
   homepage 'http://handbrake.fr'
-  #md5 'fbc81d892da7593ed363e67da9bac274'
+  version '0.9.8'
+  md5 '71637bab2719a976d62d5c1944227b59'
 
   depends_on 'wget'
   depends_on 'yasm'
@@ -34,7 +35,7 @@ class Handbrake < Formula
     To link the application to a normal Mac OS X location:
       brew linkapps
     or:
-      ln -s #{prefix}/HandBrake.app /Applications
+      ln -s #{prefix}/HandBrake.app ~/Applications
 
     On Xcode 4.3, requires:
         brew install https://raw.github.com/adamv/homebrew-alt/master/duplicates/autoconf.rb
